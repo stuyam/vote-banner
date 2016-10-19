@@ -1,0 +1,41 @@
+<script type="text/javascript">
+  var closeVoteBanner = function(){
+    var banner = document.getElementById('vote-banner');
+    if(banner){
+      banner.style.display = 'none';
+    }
+  }
+</script>
+<style type="text/css">
+  #vote-banner{
+    width: 100%;
+    padding: 25px;
+    font-size: 14px;
+    text-align: center;
+    background: #00BCD4;
+    color: white;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    position: relative;
+  }
+  #vote-banner a{
+    color: white;
+  }
+  #vote-banner_close{
+    padding: 20px;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-left: 1px solid #35C2D4;
+    cursor: pointer;
+  }
+  #vote-banner_close:hover{
+    background: #35C2D4;
+  }
+</style>
+<div id="vote-banner">
+  We're all in this together. <a href="https://turbovote.org" target="new">Register to vote.</a>
+  <div id="vote-banner_close" onclick="closeVoteBanner()">x</div>
+</div>
